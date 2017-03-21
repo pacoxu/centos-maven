@@ -10,4 +10,3 @@ RUN cd /opt/ &&  wget http://mirror.olnevhost.net/pub/apache/maven/maven-3/3.0.5
 ENV M2_HOME=/usr/local/apache-maven
 ENV M2=$M2_HOME/bin  PATH=$M2:$PATH
 
-RUN mvn -version
