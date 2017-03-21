@@ -8,5 +8,8 @@ ENV JAVA_HOME=/opt/jdk1.8.0_121/
 
 RUN cd /opt/ &&  wget http://mirror.olnevhost.net/pub/apache/maven/maven-3/3.0.5/binaries/apache-maven-3.0.5-bin.tar.gz && tar xvf apache-maven-3.0.5-bin.tar.gz && mv apache-maven-3.0.5  /usr/local/apache-maven &&  rm -f /opt/apache-maven-3.0.5-bin.tar.gz
 ENV M2_HOME=/usr/local/apache-maven
-ENV M2=$M2_HOME/bin  PATH=$M2:$PATH
+ENV M2=$M2_HOME/bin  
+ENV PATH=$M2:$PATH
+
+CMD ["sleep", "infinity" ]
 
